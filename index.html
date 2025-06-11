@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon – Bryan Doepker</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f0f0f;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+      z-index: 1;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.3;
+      background: radial-gradient(circle, #00f2ff, #0077ff);
+      animation: floatOrb 20s infinite ease-in-out;
+    }
+
+    .orb:nth-child(1) {
+      width: 200px;
+      height: 200px;
+      top: 10%;
+      left: 15%;
+      animation-delay: 0s;
+    }
+
+    .orb:nth-child(2) {
+      width: 150px;
+      height: 150px;
+      bottom: 20%;
+      right: 10%;
+      animation-delay: 5s;
+    }
+
+    .orb:nth-child(3) {
+      width: 250px;
+      height: 250px;
+      top: 30%;
+      right: 20%;
+      animation-delay: 10s;
+    }
+
+    @keyframes floatOrb {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(-30px) scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb"></div>
+  <div class="orb"></div>
+  <div class="orb"></div>
+
+  <h1>Coming Soon.</h1>
+  <p>Bryan Doepker's Resume</p>
+</body>
+</html>
